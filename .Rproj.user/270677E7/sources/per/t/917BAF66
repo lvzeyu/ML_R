@@ -1,0 +1,27 @@
+{
+    "id": "917BAF66",
+    "path": "~/共立出版データサイエンス/コード/ML_R/R.R",
+    "project_path": "R.R",
+    "type": "r_source",
+    "hash": "2379623371",
+    "contents": "",
+    "dirty": false,
+    "created": 1695020631489.0,
+    "source_on_save": true,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled2",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "118,1",
+        "scrollLine": "99"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1695116994,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1695116994621,
+    "read_only": false,
+    "read_only_alternatives": []
+}

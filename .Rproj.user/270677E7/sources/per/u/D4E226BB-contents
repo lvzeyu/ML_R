@@ -1,0 +1,88 @@
+library(readr)
+PM100 <- read_csv("Data/PM100/PM100.csv")
+
+PY100 <- read_csv("Data/PY100/PY100.csv")
+library(haven)
+library(labelled)
+
+PY100 <- read_dta("Data/PY100/PY100.dta")
+
+PY100$ZQ50
+
+PY100$AQ52
+
+PY100$IQ45
+
+table(PY100$ZQ50,PY100$IQ45)
+
+PY100$ZQ13_2B
+
+["無回答","無回答","わからない"]
+
+labels(PY100$ZQ50)
+a<-labelled::val_labels(PY100$ZQ13_2B)
+
+data.frame(a)
+
+a<-labelled::get_value_labels(PY100$ZQ13_2B)
+
+a<-data.frame(a)
+index(a)
+
+rownames(a)
+
+a["無回答",]
+
+PY100$ZQ07D
+
+labels <- labelled::get_value_labels(PY100$ZQ07D)
+labels
+
+convert_labels_to_na <- function(variable) {
+  labels <- labelled::get_value_labels(variable)
+  
+  # Check if variable is labelled
+  if (is.null(labels)) {
+    return(variable)
+  }
+  
+  values_to_na <- c("非該当", "無回答", "わからない")
+  for (label in values_to_na) {
+    if (label %in% labels) {
+      value <- as.numeric(names(labels[labels == label]))
+      variable[variable == value] <- NA
+    }
+  }
+  return(variable)
+}
+
+labels <- labelled::get_value_labels(PY100$ZQ07D)
+labels
+
+labels<-data.frame(labels)
+values_to_na <- c("非該当", "無回答", "わからない")
+na_values <- labels[rownames(labels) %in% values_to_na, ]
+
+8%in%na_values
+
+labels <- labels[rownames(labels) %in% c("非該当", "無回答", "わからない"), ]
+
+convert_labels_to_na <- function(variable) {
+  labels <- labelled::get_value_labels(variable)
+  
+  # Check if variable is labelled
+  if (is.null(labels)) {
+    return(variable)
+  }
+  
+  labels<-data.frame(labels)
+  values_to_na <- c("非該当", "無回答", "わからない")
+  na_values <- labels[rownames(labels) %in% values_to_na, ]
+  variable[variable%in%na_values] <- NA
+  return(variable)
+}
+
+convert_labels_to_na(PY100$ZQ07D)
+
+
+cbind(PY100$ZQ07D,convert_labels_to_na(PY100$ZQ07D))

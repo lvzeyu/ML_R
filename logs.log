@@ -1,0 +1,46 @@
+2023-09-18 12:57:27,519:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 12:57:27,519:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 12:57:27,519:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 12:57:27,519:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-09-18 12:58:51,552:INFO:PyCaret ClassificationExperiment
+2023-09-18 12:58:51,552:INFO:Logging name: clf-default-name
+2023-09-18 12:58:51,552:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-09-18 12:58:51,552:INFO:version 3.1.0
+2023-09-18 12:58:51,552:INFO:Initializing setup()
+2023-09-18 12:58:51,552:INFO:self.USI: b969
+2023-09-18 12:58:51,552:INFO:self._variable_keys: {'gpu_param', 'fix_imbalance', 'target_param', 'y_test', 'y_train', 'seed', 'memory', 'is_multiclass', 'fold_shuffle_param', 'gpu_n_jobs_param', 'X_train', 'exp_name_log', 'html_param', 'exp_id', 'pipeline', '_available_plots', 'X_test', 'fold_groups_param', 'USI', 'X', 'log_plots_param', 'data', '_ml_usecase', 'idx', 'fold_generator', 'n_jobs_param', 'logging_param', 'y'}
+2023-09-18 12:58:51,552:INFO:Checking environment
+2023-09-18 12:58:51,552:INFO:python_version: 3.10.13
+2023-09-18 12:58:51,552:INFO:python_build: ('main', 'Sep 11 2023 08:39:02')
+2023-09-18 12:58:51,552:INFO:machine: x86_64
+2023-09-18 12:58:51,552:INFO:platform: macOS-10.16-x86_64-i386-64bit
+2023-09-18 12:58:51,552:INFO:Memory: svmem(total=34359738368, available=3394433024, percent=90.1, used=3992850432, free=115077120, active=3284627456, inactive=3256786944, wired=708222976)
+2023-09-18 12:58:51,552:INFO:Physical Core: 10
+2023-09-18 12:58:51,552:INFO:Logical Core: 10
+2023-09-18 12:58:51,552:INFO:Checking libraries
+2023-09-18 12:58:51,552:INFO:System:
+2023-09-18 12:58:51,552:INFO:    python: 3.10.13 (main, Sep 11 2023, 08:39:02) [Clang 14.0.6 ]
+2023-09-18 12:58:51,552:INFO:executable: /opt/anaconda3/envs/automl/bin/python
+2023-09-18 12:58:51,553:INFO:   machine: macOS-10.16-x86_64-i386-64bit
+2023-09-18 12:58:51,553:INFO:PyCaret required dependencies:
+2023-09-18 13:06:13,568:WARNING:/opt/anaconda3/envs/automl/lib/python3.10/site-packages/threadpoolctl.py:1010: RuntimeWarning: 
+Found Intel OpenMP ('libiomp') and LLVM OpenMP ('libomp') loaded at
+the same time. Both libraries are known to be incompatible and this
+can cause random crashes or deadlocks on Linux when loaded in the
+same Python program.
+Using threadpoolctl may cause crashes or deadlocks. For more
+information and possible workarounds, please see
+    https://github.com/joblib/threadpoolctl/blob/master/multiple_openmp.md
+
+  warnings.warn(msg, RuntimeWarning)
+
+2023-09-18 14:46:39,704:WARNING:/var/folders/wm/5xxpvjcj15g89khxd5jwn9200000gn/T/ipykernel_94133/2615489893.py:1: DtypeWarning: Columns (26,55,56,61,458) have mixed types. Specify dtype option on import or set low_memory=False.
+  PY100=pd.read_csv("./Data/PY100/PY100.csv")
+
+2023-09-18 14:51:42,408:WARNING:/var/folders/wm/5xxpvjcj15g89khxd5jwn9200000gn/T/ipykernel_94133/2615489893.py:1: DtypeWarning: Columns (26,55,56,61,458) have mixed types. Specify dtype option on import or set low_memory=False.
+  PY100=pd.read_csv("./Data/PY100/PY100.csv")
+

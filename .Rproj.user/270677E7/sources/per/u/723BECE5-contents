@@ -1,0 +1,22 @@
+library(keras)
+install_keras()
+
+install.packages("iml")
+
+library(tidyverse)
+library(tidymodels)
+library(shapviz)
+# Integer encode factors
+dia_recipe <- diamonds %>%
+  recipe(price ~ carat + cut + clarity + color) %>% 
+  step_integer(all_nominal())
+# Will explain THIS dataset later
+set.seed(2)
+dia_small <- diamonds[sample(nrow(diamonds), 1000), ]
+dia_small_prep <- bake(
+  prep(dia_recipe), 
+  has_role("predictor"),
+  new_data = dia_small, 
+  composition = "matrix"
+)
+head(dia_small_prep)
